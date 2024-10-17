@@ -95,7 +95,7 @@ fun ReplyHomeScreen(
             drawerContent = {
                 PermanentDrawerSheet(Modifier.width(dimensionResource(R.dimen.drawer_width)),
                     drawerContainerColor = MaterialTheme.colorScheme.inverseOnSurface
-                    ) {
+                ) {
                     NavigationDrawerContent(
                         selectedDestination = replyUiState.currentMailbox,
                         onTabPressed = onTabPressed,
@@ -148,7 +148,7 @@ private fun ReplyAppContent(
     modifier: Modifier = Modifier,
 ) {
     Box(modifier = modifier)
-        
+
     {
         Row(modifier = Modifier.fillMaxSize()) {
             AnimatedVisibility(visible = navigationType == ReplyNavigationType.NAVIGATION_RAIL) {
